@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+     <title>Калькулятор</title>
+     <meta charset="utf-8" />
+   </head>
+   <body>
+      <header>
+         <img src="webLogo.png" alt="Web-технологии" width="200" /><br />
+         <h1>Основы Web-технологий</h1>
+         <nav>
+            <ul>
+               <li><a href="index.html">Главная</a></li>
+               <li><a href="technologies.html">Web-технологии</a>
+                  <ul>
+                     <li><a href="html5.html">HTML5</a></li>
+                     <li><a href="css3.html">CSS3</a></li>
+                     <li><a href="javaScript.html">JavaScript</a></li>
+                  </ul>
+               </li>
+               <li><a href="calculator.html">Калькулятор</a></li>
+               <li><a href="test.html">Тест</a></li>
+            </ul>
+         </nav>
+      </header>
+      
+      <main>
+         <table border="1">
+            <tr>
+               <td colspan="5"><input name="text" /></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="button7" onclick="callFunction()" value="7" /></td>
+               <td><input type="button" name="button8" onclick="callFunction()" value="8" /></td>
+               <td><input type="button" name="button9" onclick="callFunction()" value="9" /></td>
+               <td><input type="button" name="button/" onclick="callFunction()" value="/" /></td>
+               <td><input type="button" name="buttonC" onclick="callFunction()" value="C" /></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="button4" onclick="callFunction()" value="4" /></td>
+               <td><input type="button" name="button5" onclick="callFunction()" value="5" /></td>
+               <td><input type="button" name="button6" onclick="callFunction()" value="6" /></td>
+               <td><input type="button" name="button*" onclick="callFunction()" value="*" /></td>
+               <td><input type="button" name="button+-" onclick="callFunction()" value="&plusmn;" /></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="button1" onclick="callFunction()" value="1" /></td>
+               <td><input type="button" name="button2" onclick="callFunction()" value="2" /></td>
+               <td><input type="button" name="button3" onclick="callFunction()" value="3" /></td>
+               <td><input type="button" name="button-" onclick="callFunction()" value="-" /></td>
+               <td rowspan="2"><input type="button" name="button=" onclick="callFunction()" value="=" /><br /> </td>
+            </tr>
+            <tr>
+               <td colspan="2"><input type="button" name="button0" onclick="callFunction()" value="0" /> </td>
+               <td><input type="button" name="button." onclick="callFunction()" value="." /></td>
+               <td><input type="button" name="button+" onclick="callFunction()" value="+" /></td>
+            </tr>            
+         </table>
+      </main>
+      
+      <footer>
+         <address>
+            <a href="mailto:glycerine08@gmail.com">Пишите: glycerine08@gmail.com</a>
+         </address>
+         <p>© Глядковский В.Ю., 2017</p>
+      </footer>
+   </body>
+</html>
