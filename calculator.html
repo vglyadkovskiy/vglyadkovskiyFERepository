@@ -6,7 +6,7 @@
    </head>
    <body>
       <header>
-         <img src="webLogo.png" alt="Web-технологии" width="200" /><br />
+         <img src="webLogo.png" alt="Web-технологии" width="200" />
          <h1>Основы Web-технологий</h1>
          <nav>
             <ul>
@@ -25,37 +25,39 @@
       </header>
       
       <main>
-         <table border="1">
-            <tr>
-               <td colspan="5"><input name="text" /></td>
-            </tr>
-            <tr>
-               <td><input type="button" name="button7" onclick="callFunction()" value="7" /></td>
-               <td><input type="button" name="button8" onclick="callFunction()" value="8" /></td>
-               <td><input type="button" name="button9" onclick="callFunction()" value="9" /></td>
-               <td><input type="button" name="button/" onclick="callFunction()" value="/" /></td>
-               <td><input type="button" name="buttonC" onclick="callFunction()" value="C" /></td>
-            </tr>
-            <tr>
-               <td><input type="button" name="button4" onclick="callFunction()" value="4" /></td>
-               <td><input type="button" name="button5" onclick="callFunction()" value="5" /></td>
-               <td><input type="button" name="button6" onclick="callFunction()" value="6" /></td>
-               <td><input type="button" name="button*" onclick="callFunction()" value="*" /></td>
-               <td><input type="button" name="button+-" onclick="callFunction()" value="&plusmn;" /></td>
-            </tr>
-            <tr>
-               <td><input type="button" name="button1" onclick="callFunction()" value="1" /></td>
-               <td><input type="button" name="button2" onclick="callFunction()" value="2" /></td>
-               <td><input type="button" name="button3" onclick="callFunction()" value="3" /></td>
-               <td><input type="button" name="button-" onclick="callFunction()" value="-" /></td>
-               <td rowspan="2"><input type="button" name="button=" onclick="callFunction()" value="=" /><br /> </td>
-            </tr>
-            <tr>
-               <td colspan="2"><input type="button" name="button0" onclick="callFunction()" value="0" /> </td>
-               <td><input type="button" name="button." onclick="callFunction()" value="." /></td>
-               <td><input type="button" name="button+" onclick="callFunction()" value="+" /></td>
-            </tr>            
-         </table>
+         <form id="calculator" name="calculator">
+            <table border="1">
+               <tr>
+                  <td colspan="5"><input name="text" /></td>
+               </tr>
+               <tr>
+                  <td><button type="button" name="button7">7</button></td>
+                  <td><button type="button" name="button8">8</button></td>
+                  <td><button type="button" name="button9">9</button></td>
+                  <td><button type="button" name="button/">/</button></td>
+                  <td><button type="button" name="buttonC">C</button></td>
+               </tr>
+               <tr>
+                  <td><button type="button" name="button4">4</button></td>
+                  <td><button type="button" name="button5">5</button></td>
+                  <td><button type="button" name="button6">6</button></td>
+                  <td><button type="button" name="button*">*</button></td>
+                  <td><button type="button" name="button+-">&plusmn;</button></td>
+               </tr>
+               <tr>
+                  <td><button type="button" name="button1">1</button></td>
+                  <td><button type="button" name="button2">2</button></td>
+                  <td><button type="button" name="button3">3</button></td>
+                  <td><button type="button" name="button-">-</button></td>
+                  <td rowspan="2"><button type="button" name="button=">=</button><br /> </td>
+               </tr>
+               <tr>
+                  <td colspan="2"><button type="button" name="button0">0</button> </td>
+                  <td><button type="button" name="button.">.</button></td>
+                  <td><button type="button" name="button+">+</button></td>
+               </tr>            
+            </table>
+         </form>
       </main>
       
       <footer>
@@ -64,5 +66,6 @@
          </address>
          <p>© Глядковский В.Ю., 2017</p>
       </footer>
+      
    </body>
 </html>
